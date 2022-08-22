@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/styles.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="caja">
+
+            <h1><img src="./img/logo.png" alt="Logo de la barberia"></h1>
+
+            <nav>
+
+                <ul class="navegacion">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="">Contactos</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+
+
+
+    </header>
+
+    <main>
+        <form action="">
+
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" id="name" class="input-padron" required>
+
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX-XXXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" class="input-padron" cols="70" rows="10" required></textarea>
+
+            <!--fieldset se utiliza para agrupar campos del mismo tipo de grupo-->
+            <fieldset>
+
+                <!--legend es una etiqueta de contenido que se utiliza para colocar
+                titulos dentro de un fieldset-->
+                <legend>Como le gustaria que le contactemos?</legend>
+
+                <label for="email"><input type="radio" name="contacto" value="email" id="email">Email</label>
+                
+
+                <label for="Tel"> <input type="radio" name="contacto" value="Telefono" id="Tel"> Telefono</label>
+                
+
+                <label for="WhatsApp"> <input type="radio" checked name="contacto" value="WhatsApp" id="WhatsApp"> WhatsApp</label>
+                
+
+            </fieldset>
+
+            <fieldset>
+                <legend>En cual horario prefiere ser atendido?</legend>
+                <select >
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked> Le gustaria recibir novedades de la barberia Alura?</label>
+
+            <input type="submit" value="Enviar Formulario" class="enviar">
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h -- 20h</td>
+                </tr>
+    
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h -- 20h</td>
+                </tr>
+    
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h -- 20h</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </main>
+
+
+    <footer>
+        <img src="./img/logo-blanco.png" alt="Logo de la barberia">
+        <p class="copy">&copy Copyright Barberia Alura - 2020</p>
+    </footer>
+</body>
+
+</html>

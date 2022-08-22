@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.titulo-principal{
+    padding: 25px;
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+
+em strong{
+    color: red;
+}
+
+.diferenciales  {
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul {
+    /*Le desimos que ocupe unicamente el espacio de su contenedor*/
+    display: inline-block;
+
+    /*evitamos que se alinea con el borde inferioor de la imagen*/
+    vertical-align: top;
+    width: 30%;
+    margin-right: 10%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
